@@ -10,9 +10,9 @@ if __name__ == "__main__":
     room_video = "input/room.mp4"
     final_output = "output/combined.mp4"
 
-    # =======================
+
     # Show Original Input Video
-    # =======================
+    
     if not os.path.exists(person_video_path):
         print("Input video not found!")
         exit()
@@ -41,24 +41,22 @@ if __name__ == "__main__":
     cv.destroyAllWindows()
     cv.waitKey(1)
 
-    # =======================
+
     # Skeleton Extraction
-    # =======================
+
     print("Extracting skeleton video...")
     extract_skeleton_video(person_video_path, skeleton_video)
 
-    # =======================
+
     # Overlay Videos
-    # =======================
+
     print("Overlaying skeleton on room video...")
     overlay_videos(room_video, skeleton_video, final_output)
 
     print("Processing Complete!")
     print("Final video saved at:", final_output)
 
-    # =======================
     # Show Final Output Video
-    # =======================
     if not os.path.exists(final_output):
         print("Output video not found!")
         exit()
