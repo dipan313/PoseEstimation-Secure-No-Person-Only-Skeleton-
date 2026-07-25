@@ -1,0 +1,34 @@
+# ==========================
+# Python
+# ==========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+env/
+.venv/
+
+# VS Code
+.vscode/
+
+# ==========================
+# Input Folder
+# Keep folder, ignore contents
+# ==========================
+input/*
+!input/.gitkeep
+
+# ==========================
+# Output Folder
+# Keep folder, ignore contents
+# ==========================
+output/*
+!output/.gitkeep
+
+# ==========================
+# OS Files
+# ==========================
+.DS_Store
+Thumbs.db
